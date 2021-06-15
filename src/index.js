@@ -1,4 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { CounterWithCustomHook } from "./componets/01-useState/CounterWithCustomHook";
-ReactDOM.render(<CounterWithCustomHook />, document.getElementById("root"));
+import { SimpleForm } from "./componets/02-useEffect/SimpleForm";
+
+ReactDOM.render(<SimpleForm />, document.getElementById("root"));
