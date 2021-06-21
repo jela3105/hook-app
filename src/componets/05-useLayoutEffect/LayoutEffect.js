@@ -1,5 +1,5 @@
-import React from "react";
-import "../02-useEffect/effects.css";
+import React, { useLayoutEffect, useRef } from "react";
+import "./layout.css";
 import { useFetch } from "../../hooks/useFetch";
 import { useCounter } from "../../hooks/useCounter";
 
@@ -14,13 +14,16 @@ export const LayoutEffect = () => {
     reset(1);
   }
   const { quote } = !!data && data[0];
-
+  const pTag = useRef();
+  useLayoutEffect(() => {
+    console.log(pTag.current.getBoundingClientRect());
+  }, [quote]);
   return (
     <div>
       <h1>LayoutEffect</h1>
       <hr />
       <blockquote className="text-right">
-        <p> {quote} </p>
+        <p ref={pTag}> {quote} </p>
       </blockquote>
       <button className="btn btn-primary" onClick={increment}>
         Next quote
