@@ -5,9 +5,12 @@ import "../02-useEffect/effects.css";
 export const CallbackHook = () => {
   const [counter, setCounter] = useState(10);
 
-  const increment = useCallback(() => {
-    setCounter((c) => c + 1);
-  }, [setCounter]);
+  const increment = useCallback(
+    (num) => {
+      setCounter((c) => c + num);
+    },
+    [setCounter]
+  );
 
   return (
     <div>
