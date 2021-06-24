@@ -1,5 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { CallbackHook } from "./componets/06-memos/CallbackHook";
+import { Father } from "./componets/07-task-memo/Father";
 
-ReactDOM.render(<CallbackHook />, document.getElementById("root"));
+ReactDOM.render(<Father />, document.getElementById("root"));

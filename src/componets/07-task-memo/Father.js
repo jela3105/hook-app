@@ -1,26 +1,27 @@
 import React from "react";
-import { Hijo } from "./Hijo";
+import { Child } from "./Child";
 import { useState } from "react";
+import "../02-useEffect/effects.css";
 
-export const Padre = () => {
-  const numeros = [2, 4, 6, 8, 10];
-  const [valor, setValor] = useState(0);
+export const Father = () => {
+  const numbers = [2, 4, 6, 8, 10];
+  const [value, setValue] = useState(0);
 
-  const incrementar = (num) => {
-    setValor(valor + num);
+  const increment = (num) => {
+    setValue(value + num);
   };
 
   return (
     <div>
-      <h1>Padre</h1>
-      <p> Total: {valor} </p>
+      <h1>Father</h1>
+      <p> Total: {value} </p>
 
       <hr />
 
-      {numeros.map((n) => (
-        <Hijo key={n} numero={n} incrementar={incrementar} />
+      {numbers.map((n) => (
+        <Child key={n} numbers={n} increment={increment} />
       ))}
-      {/* <Hijo /> */}
+      {/* <Child /> */}
     </div>
   );
 };
