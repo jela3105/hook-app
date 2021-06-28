@@ -22,7 +22,7 @@ export const Father = () => {
       <hr />
 
       {numbers.map((n) => (
-        <Child key={n} numbers={n} increment={increment} />
+        <Child key={n} number={n} increment={increment} />
       ))}
       {/* <Child /> */}
     </div>
