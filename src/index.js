@@ -1,8 +1,5 @@
-//import React from "react";
-//import ReactDOM from "react-dom";
-//import { Father } from "./componets/07-task-memo/Father";
-//
-//ReactDOM.render(<Father />, document.getElementById("root"));
-//
+import React from "react";
+import ReactDOM from "react-dom";
+import { TodoApp } from "./components/08-useReducer/TodoApp";
 
-import "./componets/08-useReducer/intro-reducer";
+ReactDOM.render(<TodoApp />, document.getElementById("root"));
