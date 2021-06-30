@@ -14,3 +14,7 @@ p{
   display: flex;
   justify-content: space-between;
 }
+
+.complete{
+  text-decoration: line-through;
+}
