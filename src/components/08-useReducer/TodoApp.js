@@ -42,11 +42,13 @@ export const TodoApp = () => {
       <h1>TodoApp ({todos.length})</h1>
       <hr />
       <div className="row">
-        <TodoList
-          todos={todos}
-          handleToggle={handleToggle}
-          handleDelete={handleDelete}
-        />
+        <div className="col-7">
+          <TodoList
+            todos={todos}
+            handleToggle={handleToggle}
+            handleDelete={handleDelete}
+          />
+        </div>
         <div className="col-5">
           <TodoAdd handleAddTodo={handleAddTodo} />
         </div>
