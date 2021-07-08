@@ -31,7 +31,7 @@ export const NavBar = () => {
             className="nav-link"
             to="/login"
           >
-            Pricing
+            Login
           </NavLink>
         </div>
       </div>
